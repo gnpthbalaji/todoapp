@@ -1,6 +1,4 @@
 # todoapp
- Todo App created using Django
-# todoapp
 
 This is a to-do app created using the Django framework.
 
