@@ -1,0 +1,26 @@
+{% extends 'todo/main.html' %}
+{% block content %}
+<div class="header-bar">
+    <a href="{% url 'todolist' %}"><i class="ri-arrow-left-circle-fill"></i>Back</a>
+</div>
+<div class="card-body">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ form.title.id_for_label }}">Title:</label>
+            {{ form.title }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.description.id_for_label }}">Description:</label>
+            {{ form.description }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.complete.id_for_label }}">Complete:</label>
+            {{ form.complete }}
+        </div>
+        <button class="button" type="submit">Submit</button>
+    </form>
+</div>
+</div>
+
+{% endblock content %}

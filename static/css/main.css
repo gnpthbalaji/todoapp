@@ -1,0 +1,125 @@
+body {
+    background-color:#fffffe;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 50px;
+    
+}
+
+.container {
+    background-color: #eff0f3;
+    max-width: 500px;
+    margin: auto;
+    -webkit-box-shadow: 2px 2px 15px -4px rgba(0,0,0,0.20);
+    box-shadow: 2px 2px 15px -4px rgba(0,0,0,0.20);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #0d0d0d;
+    margin: 0;
+    padding: 0;
+}
+a, p{
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+}
+.header-bar{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(90deg, #e993b0 0%,  #e84d81 50%, #d82863 100% )
+}
+.header-bar a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.header-bar h1, h3{
+    color: #fffffe
+}
+.todo-wrapper{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #eff0f3;
+    border-top: 1px solid #fffffe;
+}
+.ri-checkbox-circle-fill{
+    color: rgb(11,169, 70);
+}
+.ri-checkbox-blank-circle-line{
+    color: rgb(6,109,212)
+}
+.ri-close-circle-fill{
+    color: rgb(248,7,7)
+
+}
+.todo-title a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.todo-wrapper a{
+    text-decoration: none;
+}
+#search-add-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+#search-add-wrapper a {
+    text-decoration: none;
+    
+}
+.ri-add-circle-fill{
+    color: rgb(6,109,212);
+    font-size: 25px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.form-group {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically in the center */
+}
+.form-group label {
+    flex: 0 0 150px; /* Set a fixed width for the label */
+    margin-right: 10px; /* Add spacing between label and input */
+}
+.form-group input[type="text"], .form-group input[type="password"],
+.form-group textarea {
+    flex: 1;
+    padding: 2px;
+    width: 90%;
+    border: 1px solid #d9376e;
+    border-radius: 5px; /* Adjust width to fit remaining space */
+}
+
+.search {
+    width: 100%;
+    height: 85%;
+    padding: 10px;
+    border: 1px solid #d9376e;
+    border-radius: 5px;
+}
+
+.button {
+    border: 1px solid #eff0f3;
+    background-color: #d9376e;
+    color: #0d0d0d;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px; /* Add margin between input and button */
+}
+.ri-arrow-left-circle-fill{
+    color:rgb(255,255,255)
+}
