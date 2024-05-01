@@ -8,10 +8,13 @@ from django.urls import reverse_lazy
 from .models import TodoItem
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login
 
 
 # Create your views here.
+
+
+# class based views for the todo app
 class CustomLoginView(LoginView):
     template_name = 'todo/login.html'
     fields = '__all__'
@@ -23,7 +26,6 @@ class CustomLoginView(LoginView):
 def custom_logout(request):
     logout(request)
     return redirect('login')
-
 class RegisterPage(FormView):
     template_name = 'todo/register.html'
     form_class = UserCreationForm
@@ -41,11 +43,6 @@ class RegisterPage(FormView):
             return redirect('todolist')
         return super(RegisterPage,self).get(*args, **kwargs)
     
-
-
-
-
-
 class TodoList(LoginRequiredMixin, ListView):
     model = TodoItem
     template_name = 'todo/index.html'
@@ -60,7 +57,6 @@ class TodoList(LoginRequiredMixin, ListView):
             context['todolist'] = context['todolist'].filter(title__startswith=search_input)
         context['search_input'] = search_input
         return context
-
 
 class TodoDetail(LoginRequiredMixin,DetailView):
     model = TodoItem
