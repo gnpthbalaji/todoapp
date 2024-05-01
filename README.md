@@ -51,6 +51,3 @@ The todoapp is a web application that allows users to manage their tasks and kee
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-## Contact
-
-For any inquiries or questions, please contact us at [your-email@example.com](mailto:your-email@example.com).
